@@ -1,0 +1,36 @@
+img {
+    max-width: 100%;
+    }
+   
+
+header nav {    
+    display: block; 
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+p {
+    color: #fff;
+}
+
+h2 span {
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width: 960px)
+{header nav {
+    display: inline;
+    position: fixed;
+   /* width: 100%;
+    margin: 0px auto;*/
+    padding: 5px 0px;
+    background: #fff;
+    }
+}
+
+body {
+    background-image:url('lights.jpg');
+    background-size: cover;
+}
