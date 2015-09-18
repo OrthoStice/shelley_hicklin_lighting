@@ -7,6 +7,8 @@ header nav {
     position: fixed;
     top: 0;
     right: 0;
+    font: #fff 6em;
+    background: #111;
 }
 
 p {
@@ -25,11 +27,17 @@ h2 span {
    /* width: 100%;
     margin: 0px auto;*/
     padding: 5px 0px;
-    background: #fff;
+    font: #fff 7em;
     }
 }
 
 body {
-    background-image:url('lights.jpg');
+    background-image:url('lights.png');
     background-size: cover;
+    max-width:100%;
+}
+
+body section {
+    width: 70%;
+    margin: 15%;
 }
