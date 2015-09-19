@@ -1,13 +1,27 @@
-
+html { 
+  background-color: #00000F;
+  background: 
+  linear-gradient(#A30052, transparent 60%),
+linear-gradient(0deg, #fff, transparent),
+url(lights.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
    
-header nav {    
-    display: block; 
+header nav ul {    
+    float: right; 
     position: fixed;
     top: 0;
     right: 0;
     font: #fff 6em;
     background: #111;
+    text-decoration: none;
 }
+
+
+
 
 p {
     color: #fff;
@@ -29,15 +43,20 @@ h2 span {
     }
 }
 
-html { 
-  background: url(lights.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 
 body section {
     width: 70%;
     margin: 15%;
+}
+
+#Bio, #Reviews h2{
+    background: black;
+}
+
+#Title {
+ width:100%;
+ height: 100px;
+ font-size: 1.2em;
+ margin-bottom: 400px;
 }
