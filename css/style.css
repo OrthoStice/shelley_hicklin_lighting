@@ -1,9 +1,9 @@
 html { 
-  background-color: #00000F;
+  background-color: #3D9999;
   background: 
-  linear-gradient(#A30052, transparent 60%),
-linear-gradient(0deg, #fff, transparent),
-url(lights.png) no-repeat center center fixed; 
+  linear-gradient(#3D9999, transparent 40%),
+  linear-gradient(0deg, #fff, transparent),
+  url(lights.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -36,8 +36,8 @@ h2 span {
 {header nav {
     display: inline;
     position: fixed;
-   /* width: 100%;
-    margin: 0px auto;*/
+    width: 100%;
+    margin: 0px auto;
     padding: 5px 0px;
     font: #fff 7em;
     }
@@ -56,7 +56,8 @@ body section {
 
 #Title {
  width:100%;
- height: 100px;
+ height: 100%;
  font-size: 1.2em;
  margin-bottom: 400px;
+ background-size: cover;
 }
