@@ -3,7 +3,7 @@ html {
   background: 
   linear-gradient(#3D9999, transparent 10%),
   linear-gradient(0deg, #FFE066, transparent),
-  url(lights.png) no-repeat center center fixed; 
+  url(../img/lights.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -68,8 +68,8 @@ h1 {
 }
 
 #gallery img {
-    max-width: 45%;
-    margin: 2.5%;
+    max-width: 30.6%;
+    margin: 2%;
     list-style: none;
     float: left;
 }
