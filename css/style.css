@@ -1,9 +1,10 @@
+
 html { 
   background-color: #3D9999;
   background: 
   /*linear-gradient(#3D9999, transparent 10%),*/
   /*linear-gradient(0deg, #FFE066, transparent),*/
-  linear-gradient(#dddfd4, transparent 8%),
+  linear-gradient(#dddfd4, transparent 7%),
   linear-gradient(0deg, #dddfd4, transparent),
   url(../img/lights.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -28,7 +29,8 @@ html {
     display: block;
     padding: 0 5% 0 5%;
     margin: 5% 7% 5% 0%;
-    background: #3fb0ac;
+    background: #26332D;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 p {
     color: #fff;
@@ -39,14 +41,14 @@ h2 span {
     text-align: center;
 }
 
-/*@media (max-width: 960px)*/
-/*{header nav {*/
-/*    display: inline;*/
-/*    position: fixed;*/
-/*    padding: 5px 0px;*/
-/*    font: #fff 7em;*/
-/*    }*/
-/*}*/
+@media (max-width: 960px)
+{header nav {
+    display: inline;
+    position: fixed;
+    padding: 5px 0px;
+    font: #fff 7em;
+    }
+}
 
 
 
@@ -55,17 +57,25 @@ body section {
     margin: 15%;
 }
 
-#Bio div, #Reviews div{
-    background: #3fb0ac;
+#Bio div, #Reviews div, #Photos div {
+    background: #26332D;
     color:#dddfd4;
     padding: 5% 5%;
     max-width:60%;
+    border-radius:10%;
+    font-family: 'Roboto Condensed', sans-serif;
+    list-style: none;
 }
 
 #Title {
- font-size: 1.5em;
+ font-size: 1.6em;
+ font-family: 'Roboto', sans-serif;
  padding: 0% 2% 30% 2%;
  margin: 0% 0 20% 0;
+}
+
+#Contact div{
+    background: #dddfd4;
 }
 
 h1 {
