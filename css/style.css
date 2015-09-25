@@ -1,8 +1,10 @@
 html { 
   background-color: #3D9999;
   background: 
-  linear-gradient(#3D9999, transparent 10%),
-  linear-gradient(0deg, #FFE066, transparent),
+  /*linear-gradient(#3D9999, transparent 10%),*/
+  /*linear-gradient(0deg, #FFE066, transparent),*/
+  linear-gradient(#dddfd4, transparent 8%),
+  linear-gradient(0deg, #dddfd4, transparent),
   url(../img/lights.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -14,7 +16,7 @@ html {
     position: fixed;
     top: 0;
     right: 0;
-    font: #fff 6em;
+    font: #dddfd4 6em;
     text-decoration: none;
     display: inline-block;
     list-style: none;
@@ -25,8 +27,8 @@ html {
     list-style: none;
     display: block;
     padding: 0 5% 0 5%;
-    margin: 5% 0;
-    background: #424eee;
+    margin: 5% 7% 5% 0%;
+    background: #3fb0ac;
 }
 p {
     color: #fff;
@@ -53,8 +55,11 @@ body section {
     margin: 15%;
 }
 
-#Bio, #Reviews h2{
-    background: #6E254A;
+#Bio div, #Reviews div{
+    background: #3fb0ac;
+    color:#dddfd4;
+    padding: 5% 5%;
+    max-width:60%;
 }
 
 #Title {
@@ -64,29 +69,30 @@ body section {
 }
 
 h1 {
-    text-shadow: 0px 10px 8px #6E254A;
+    text-shadow: 4px 4px 15px #dddfd4;
 }
 
 #gallery img {
-    max-width: 30.6%;
-    margin: 2%;
+    max-width: 45%;
+    margin: 2.5%;
     list-style: none;
     float: left;
 }
 
 /* unvisited link */
 a:link {
-    color: #FF0000;
+    color: #dddfd4;
 }
 
 /* visited link */
 a:visited {
-    color: #00FF00;
+    color: #dddfd4;
 }
 
 /* mouse over link */
 a:hover {
-    color: #FF00FF;
+    color: #dddfd4;
+    font-size: 1.5;
 }
 
 /* selected link */
