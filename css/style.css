@@ -13,7 +13,8 @@ html {
 
 #wrapper {
      width: 85%;
-     margin: 0 auto; 
+     margin: 0 auto;
+     font-family: 'Roboto Condensed', sans-serif;
 }
    
 #nav {    
@@ -53,7 +54,7 @@ h2 span {
     }
 }
 
-#Bio div, #Reviews div, #Photos div {
+#Bio div, #Reviews div {
     background: #26332D;
     color:#dddfd4;
     padding: 5% 5%;
@@ -77,10 +78,16 @@ h1 {
     clear:both;
     display: inline-block;
 }
+
 #Photos img {
-    max-width: 45%;
+    width: 45%;
     margin: 2.5%;
     float: left;
+}
+
+#Photos div {
+    padding: 0 0;
+    margin: 5% 5%;
 }
 
 /* unvisited link */
