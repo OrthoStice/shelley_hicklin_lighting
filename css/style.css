@@ -51,6 +51,7 @@ h2 span {
     position: fixed;
     padding: 5px 0px;
     font: #fff 7em;
+    border-radius:7px;
     }
 }
 
@@ -58,7 +59,7 @@ h2 span {
     background: #26332D;
     color:#dddfd4;
     padding: 5% 5%;
-    border-radius:10%;
+    border-radius:10px;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -83,6 +84,7 @@ h1 {
     width: 45%;
     margin: 2.5%;
     float: left;
+    border-radius:10px;
 }
 
 #Photos div {
@@ -102,10 +104,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-    font-size: 1.2em;
+    font-size: 1.05em;
+    color: #efffe5;
 }
 
-/* selected link */
-a:active {
-    color: #0000FF;
-}
