@@ -2,7 +2,7 @@
 html { 
   background-color: #3D9999;
   background: 
-  linear-gradient(#dddfd4, transparent 7%),
+  linear-gradient(#dddfd4, transparent 8%),
   linear-gradient(0deg, #dddfd4, transparent),
   url(../img/lights.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -36,6 +36,12 @@ html {
     background: #26332D;
     font-family: 'Roboto Condensed', sans-serif;
 }
+
+#nav .active {
+    background: #dddfd4;
+    color: #26332d;
+}
+
 p {
     color: #fff;
 }
@@ -72,7 +78,7 @@ h2 span {
 
 
 h1 {
-    text-shadow: 4px 4px 15px #dddfd4;
+    text-shadow: 3px 3px 18px #dddfd4;
 }
 
 .clear {
