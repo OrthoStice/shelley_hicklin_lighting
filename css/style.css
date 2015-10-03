@@ -1,4 +1,3 @@
-
 html { 
   background-color: #3D9999;
   background: 
@@ -86,6 +85,9 @@ h1 {
     display: inline-block;
 }
 
+#Reviews p {
+    padding: 2% 0;
+}
 #Photos img {
     width: 45%;
     margin: 2.5%;
