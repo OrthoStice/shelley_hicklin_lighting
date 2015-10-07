@@ -36,10 +36,6 @@ html {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-#nav .active {
-    background: #dddfd4;
-    color: #26332d;
-}
 
 p {
     color: #fff;
@@ -106,7 +102,7 @@ a:link {
 }
 
 /* visited link */
-a:visited {
+a:visited:not(.active) {
     color: #dddfd4;
 }
 
@@ -116,3 +112,7 @@ a:hover {
     color: #efffe5;
 }
 
+#nav .active {
+    background: #dddfd4;
+    color: #26332d;
+}
