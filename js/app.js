@@ -6,8 +6,8 @@ $("#nav li").click (function(e){
     $(this).addClass("active"); 
 });
 
-$("header h1,nav").hide().fadeIn(3500);
-$("#Bio").hide().fadeIn(3500);
+$("header h1,nav").hide().fadeIn(4000);
+$("#Bio").hide().fadeIn(5000);
 
 //testing out some init stuff
 

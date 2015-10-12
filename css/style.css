@@ -58,6 +58,7 @@ h2 span {
 
 #Bio div, #Reviews div {
     background: #26332D;
+    opacity: .86;
     color:#dddfd4;
     padding: 5% 5%;
     border-radius:10px;
