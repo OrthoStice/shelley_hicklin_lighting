@@ -68,9 +68,9 @@ var Util = {
   message: function() {
     if ( typeof console == "object" ) {
       if ( Util.is_webkit() ) {
-        console.log( "%cHey! What are you looking under here for?\nDeveloped by Shelley Hicklin LinkedIn-https://www.linkedin.com/pub/shelley-hicklin/7b/5b1/971", "color: #359AD8; font-size: 18px; font-family: 'Trebuchet MS', Helvetica, sans-serif;" );
+        console.log( "%cHey! What are you looking under here for?\nDeveloped by Shelley Hicklin LinkedIn: https://www.linkedin.com/pub/shelley-hicklin/7b/5b1/971", "color: #359AD8; font-size: 18px; font-family: 'Trebuchet MS', Helvetica, sans-serif;" );
       } else {
-        console.log( "Hey! What are you looking under here for?\nDeveloped by Shelley Hicklin LinkedIn-https://www.linkedin.com/pub/shelley-hicklin/7b/5b1/971" );
+        console.log( "Hey! What are you looking under here for?\nDeveloped by Shelley Hicklin LinkedIn: https://www.linkedin.com/pub/shelley-hicklin/7b/5b1/971" );
       }
     }
   }
