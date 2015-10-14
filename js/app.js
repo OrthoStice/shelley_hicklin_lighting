@@ -11,51 +11,70 @@ $("#Bio").hide().fadeIn(5000);
 
 //testing out some init stuff
 
-$(document).ready(function(){
+// $(document).ready(function(){
 
-	$('#intro').css({'height':(($( window ).innerHeight()))+'px'});
+// 	$('#intro').css({'height':(($( window ).innerHeight()))+'px'});
 
-	$('.image-link').magnificPopup({
-	  type: 'image',
-	  gallery:{
-	    enabled:false
-	  }
-	});
+// 	$('.image-link').magnificPopup({
+// 	  type: 'image',
+// 	  gallery:{
+// 	    enabled:false
+// 	  }
+// 	});
 
-	var tw = $('.thumb').width();
-	$('.thumb').css({'height':tw+'px'});
+// 	var tw = $('.thumb').width();
+// 	$('.thumb').css({'height':tw+'px'});
 
-	var sections = $('section')
-	  , nav = $('nav');
+// 	var sections = $('section')
+// 	  , nav = $('nav');
 	 
-	$(window).on('scroll', function () {
-	  var cur_pos = $(this).scrollTop();
+// 	$(window).on('scroll', function () {
+// 	  var cur_pos = $(this).scrollTop();
 	 
-	  sections.each(function() {
-	    var top = $(this).offset().top -32,
-	        bottom = top + $(this).outerHeight();
+// 	  sections.each(function() {
+// 	    var top = $(this).offset().top -32,
+// 	        bottom = top + $(this).outerHeight();
 	 
-	    if (cur_pos >= top && cur_pos <= bottom) {
-	      nav.find('a').removeClass('active');
-	      sections.removeClass('active');
+// 	    if (cur_pos >= top && cur_pos <= bottom) {
+// 	      nav.find('a').removeClass('active');
+// 	      sections.removeClass('active');
 	 
-	      $(this).addClass('active');
-	      nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
-	    }
+// 	      $(this).addClass('active');
+// 	      nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+// 	    }
 
 
 
-	  });
+// 	  });
 
-	});
-});
+// 	});
+// });
 
-$(window).resize(function(){
+// $(window).resize(function(){
 	
-	$('#intro').css({'height':(($( window ).innerHeight()))+'px'});
+// 	$('#intro').css({'height':(($( window ).innerHeight()))+'px'});
 	
-	var tw = $('.thumb').width();
-	$('.thumb').css({'height':tw+'px'});
+// 	var tw = $('.thumb').width();
+// 	$('.thumb').css({'height':tw+'px'});
 
-});
+// });
 
+
+//easter egg
+var Util = {
+  is_webkit: function() {
+    return navigator.userAgent.indexOf("AppleWebKit") > -1;
+  },
+  message: function() {
+    if ( typeof console == "object" ) {
+      if ( Util.is_webkit() ) {
+        console.log( "%cHey! What are you looking under here for?\nDeveloped by Shelley Hicklin LinkedIn-https://www.linkedin.com/pub/shelley-hicklin/7b/5b1/971", "color: #359AD8; font-size: 18px; font-family: 'Trebuchet MS', Helvetica, sans-serif;" );
+      } else {
+        console.log( "Hey! What are you looking under here for?\nDeveloped by Shelley Hicklin LinkedIn-https://www.linkedin.com/pub/shelley-hicklin/7b/5b1/971" );
+      }
+    }
+  }
+}
+
+// call on page load
+Util.message();
