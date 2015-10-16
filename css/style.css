@@ -56,13 +56,37 @@ h2 span {
     }
 }
 
-#Biosection div, #Reviewssection div {
+#Biosection div {
+    width: 80%;
     background: #26332D;
-    opacity: .86;
+    opacity: .88;
     color:#dddfd4;
     padding: 5% 5%;
     border-radius:10px;
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+#Reviewssection div {
+    width: 80%;
+
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#reviewblocks p {
+    float:left;
+    width:45%;
+        background: #26332D;
+    opacity: .88;
+    color:#dddfd4;
+    padding: 5% 5%;
+    border-radius:10px;
+}
+#bioimg {
+    width:20%;
+    height:auto;
+    border-radius:100%;
+    float:left;
+    opacity:.98;
+    padding: 20px;
 }
 
 #Titlediv {
