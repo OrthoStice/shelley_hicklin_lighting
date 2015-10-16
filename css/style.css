@@ -67,19 +67,19 @@ h2 span {
 }
 
 #Reviewssection div {
-    width: 80%;
-
+    /*width: 80%;*/
     font-family: 'Roboto Condensed', sans-serif;
 }
 #reviewblocks p {
     float:left;
-    width:45%;
-        background: #26332D;
+    width: 45%;
+    background: #26332D;
     opacity: .88;
     color:#dddfd4;
-    padding: 5% 5%;
-    border-radius:10px;
+    padding: 2.5% 2.5%;
+    border-radius:5px;
 }
+
 #bioimg {
     width:20%;
     height:auto;
@@ -87,6 +87,7 @@ h2 span {
     float:left;
     opacity:.98;
     padding: 20px;
+    shape-outside: circle();
 }
 
 #Titlediv {
