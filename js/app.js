@@ -2,7 +2,7 @@ $(window).scroll(function() {
     var windscroll = $(window).scrollTop();
     if (windscroll >= 100) {
         $('nav').addClass('fixed');
-        $('section').each(function(i) {
+        $('span').each(function(i) {
             if ($(this).position().top <= windscroll - 100) {
                 $('nav a.active').removeClass('active');
                 $('nav a').eq(i).addClass('active');
@@ -25,8 +25,9 @@ $(window).scroll(function() {
 //     $(this).addClass("active"); 
 // });
 
-// $("header h1,nav").hide().fadeIn(4000);
-// $("#Bio").hide().fadeIn(5000);
+//opening fade effect
+$("header h1,nav").hide().fadeIn(4000);
+$("#Bio").hide().fadeIn(5000);
 
 //testing out some init stuff
 
