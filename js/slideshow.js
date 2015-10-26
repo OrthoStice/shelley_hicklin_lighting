@@ -20,21 +20,6 @@ $("body").append($overlay);
 $("#imageGallery a").click(function(event){
   event.preventDefault();
   var imageLocation = $(this).attr("id");
-  //Update overlay with the image linked in the link
-  // $image.attr("src", imageLocation);
-  
-  //Show the overlay.
-
-
-
-  
-  //Get child's alt attribute and set caption
-  // var captionText = $(this).children("img").attr("alt");
-  // $caption.text(captionText);
-
-//When overlay is clicked
-
-
 	var apiKey = '7b67c7183d7b429d9225c15c48efb9a8';
 	var userID = '51428176@N08';
   var flickerAPI= 'https://api.flickr.com/services/rest/?format=json&method=flickr.photosets.getPhotos&api_key=' + apiKey + '&photoset_id=' + imageLocation + '&user_id=' + userID + '&jsoncallback=?';
@@ -48,12 +33,12 @@ $("#imageGallery a").click(function(event){
         photoHTML += '</li>';
         }); // end each loop
         photoHTML += '</ul>';
-        $overlay.append(photoHTML)
+        $overlay.append(photoHTML);
         $overlay.show();
     } //end display Photos
     
   $.getJSON(flickerAPI, flickerOptions , displayPhotos);
-});//on click functio
+});//on click function
 
 
  $overlay.click(function(){
