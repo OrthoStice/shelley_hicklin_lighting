@@ -50,6 +50,7 @@ h2 span {
 {header nav {
     display: inline;
     position: fixed;
+    top: 0;
     padding: 5px 0px;
     font: #fff 7em;
     border-radius:7px;
@@ -76,7 +77,8 @@ h2 span {
     background: #26332D;
     opacity: .88;
     color:#dddfd4;
-    padding: 2.5% 2.5%;
+    /*padding: 2.5% 2.5%;*/
+    border: 2.5%, 2.5:
     border-radius:5px;
 }
 
@@ -112,6 +114,7 @@ h1 {
 }
 #Photossection img {
     width: 45%;
+    max-height:280px;
     margin: 2.5%;
     float: left;
     border-radius:10px;
@@ -121,6 +124,17 @@ h1 {
     padding: 0 0;
     margin: 5% 5%;
 }
+
+#Contactsection form{
+    padding: 0 0 0 20%;
+    text-align:center;
+}
+
+footer div {
+    width:100%;
+    height:50px;
+}
+
 
 /* unvisited link */
 a:link {
@@ -147,7 +161,7 @@ a:hover: {
 }
 /*Lightbox stylie*/
 #overlay {
-  background:rgba(0,0,0,0.7);
+  background:rgba(98,98,98,0.8);
   width:100%;
   height:100%;
   position:fixed;
@@ -158,9 +172,9 @@ a:hover: {
   overflow-y: scroll
 }
 
-/*#overlay img {*/
-/* margin-top: 10%; */
-/*}*/
+#overlay img {
+ max-width:45%;
+}
 
 #overlay p {
  color:white; 
