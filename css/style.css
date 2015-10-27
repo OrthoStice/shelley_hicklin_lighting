@@ -101,7 +101,16 @@ body {
  margin: 0% 0 20% 0;
 }
 
+.imgcontainer {
+    width: 45%;
+    height: auto;
+    margin: 2.5%;
+    float: left;
+}
 
+.imgcontainer img {
+    width:100%;
+}
 
 h1 {
     text-shadow: 3px 3px 18px #dddfd4;
@@ -171,4 +180,8 @@ a:hover: {
 
 #overlay p {
  color:white; 
+}
+
+.removable{
+    display: flex;
 }
