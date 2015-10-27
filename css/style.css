@@ -101,19 +101,7 @@ body {
  margin: 0% 0 20% 0;
 }
 
-.imgcontainer {
-    width: 45%;
-    height: auto;
-    background: #dddfd4;
-    overflow: hidden;
-    float:left;
-}
 
-.imgcontainer img {
-   width: auto;
-    height: 90%;
-    overflow: hidden;
-}
 
 h1 {
     text-shadow: 3px 3px 18px #dddfd4;
