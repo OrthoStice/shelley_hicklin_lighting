@@ -38,12 +38,7 @@ html {
 }
 
 
-p {
-    color: #fff;
-}
-
 h2 span {
-    color: #fff;
     text-align: center;
 }
 
@@ -111,25 +106,24 @@ body {
     text-align:center;
 }
 
-#imageGallery p {       
-    display: block;
-    width: 100%;
+.imgcontainer a {
     position: relative;
-    bottom: 3em; 
-    left: 0;
-    z-index: 300;
-    margin: 0;
-    padding: .5em 0em;
-    /*text-indent: 5px;*/
-    background:rgba(38, 51, 45, .85);
-    color: #dddfd4;
+    display:block;
 }
-    
 
 .imgcontainer img {
     width:100%;
-    z-index: 1;
 }
+
+.imgcontainer span {
+    position: relative;
+    bottom:3em;
+    color:#dddfd4;
+    background: rgba(38, 51, 45, .8);
+}
+        
+    
+
 
 
 

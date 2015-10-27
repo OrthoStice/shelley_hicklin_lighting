@@ -19,7 +19,7 @@ $("#imageGallery a").click(function(event){
   function displayPhotos(data) {
       var photoHTML = '<ul class="removeable">';
       $.each(data.photoset.photo,function(i,item) {
-        photoHTML += '<li class="grid-25 tablet-grid-50">';
+        photoHTML += '<li class="flexbox item">';
         photoHTML += '<img src="https://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '.jpg>';
         photoHTML += '</li>';
         }); // end each loop
@@ -35,5 +35,5 @@ $("#imageGallery a").click(function(event){
  $overlay.click(function(){
   //Hide the overlay
   $overlay.hide();
-  (".removable").remove();
+  $(".removeable").remove();
 });
