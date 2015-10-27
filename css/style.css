@@ -104,22 +104,34 @@ body {
 
 .imgcontainer {
     width: 45%;
-    height: auto;
+    height: 10%;
     margin: 2.5%;
     float: left;
+    background:orange;
+    text-align:center;
 }
+
+#imageGallery p {       
+    display: block;
+    width: 100%;
+    position: relative;
+    bottom: 3em; 
+    left: 0;
+    z-index: 300;
+    margin: 0;
+    padding: .5em 0em;
+    /*text-indent: 5px;*/
+    background:rgba(38, 51, 45, .85);
+    color: #dddfd4;
+}
+    
 
 .imgcontainer img {
     width:100%;
+    z-index: 1;
 }
 
-.imgcontainer span {
-    position: absolute; 
-    top: 200px; 
-    left: 0; 
-    width: 100%; 
-    display:none;
-}
+
 
 h1 {
     text-shadow: 3px 3px 18px #dddfd4;
@@ -188,12 +200,14 @@ a:hover: {
 
 #overlay img {
  max-width:45%;
+ margin: 1em;
 }
+
 
 #overlay p {
  color:white; 
 }
 
-.removable{
+#overlay ul {
     display: flex;
 }
