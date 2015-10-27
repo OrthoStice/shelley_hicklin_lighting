@@ -4,16 +4,7 @@
 //   c25da700ef93632a
 
 var $overlay = $('<div id="overlay"></div>');
-// var $image = $("<img>");
-// // var $caption = $("<p></p>");
 
-// //An image to overlay
-// $overlay.append($image);
-
-// //A caption to overlay
-// // $overlay.append($caption);
-
-// //Add overlay
 $("body").append($overlay);
 
 //Capture the click event on a link to an image
@@ -26,7 +17,7 @@ $("#imageGallery a").click(function(event){
   var flickerOptions= "photoset";
 
   function displayPhotos(data) {
-      var photoHTML = '<ul>';
+      var photoHTML = '<ul class="removeable">';
       $.each(data.photoset.photo,function(i,item) {
         photoHTML += '<li class="grid-25 tablet-grid-50">';
         photoHTML += '<img src="https://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '.jpg>';
@@ -44,4 +35,5 @@ $("#imageGallery a").click(function(event){
  $overlay.click(function(){
   //Hide the overlay
   $overlay.hide();
+  (".removable").remove();
 });
