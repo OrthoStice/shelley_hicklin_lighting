@@ -96,32 +96,46 @@ body {
  padding: 0% 2% 30% 2%;
  margin: 0% 0 20% 0;
 }
+/*photo section hover css*/
 
-.imgcontainer {
-    width: 45%;
-    height: 10%;
-    margin: 2.5%;
-    float: left;
-    background:orange;
-    text-align:center;
+#photosection{
+  width:80%;
 }
 
-.imgcontainer a {
+article{
+  float:left;
+  width:45%;
+  margin:2.5%;
+}
+.caption {
     position: relative;
-    display:block;
+    overflow: hidden;
+   
 }
+.caption__media {
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    
+}
+.caption__overlay {
+    background: rgba(0,0,0,.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    color: white;
+    transform: translateY(100%);
+    transition: transform .35s ease-out;
+}
+.caption:hover .caption__overlay {
+    transform: translateY(0%);
 
-.imgcontainer img {
-    width:100%;
 }
-
-.imgcontainer span {
-    position: relative;
-    bottom:3em;
-    color:#dddfd4;
-    background: rgba(38, 51, 45, .8);
-}
-        
+ 
     
 
 

@@ -23,10 +23,10 @@ $(window).scroll(function() {
 //opening fade effect
 $("header h1,nav").hide().fadeIn(4000);
 $("#Bio").hide().fadeIn(5000);
-$("#caption").hide();
-function mouseOver() {
-    document.getElementById("#caption").style.display="block";
-}
+// $("#caption").hide();
+// function mouseOver() {
+//     document.getElementById("#caption").style.display="block";
+// }
 
 
 
