@@ -10,8 +10,13 @@ html {
   background-size: cover;
 }
 
+#Biosection,#Photossection,#Reviewssection,#Contactsection {
+    width: 84%;
+    margin: 0 3em 3em 3em;
+    border: 0 2em 3em 0;
+}
+
 #wrapper {
-     width: 85%;
      margin: 0 auto;
      font-family: 'Roboto Condensed', sans-serif;
 }
@@ -33,49 +38,29 @@ html {
     /*padding: 0 5% 0 5%;*/
     margin: 5% 7% 5% 5%;
     background: #26332D;
-    font-family: 'Roboto Condensed', sans-serif;
     font-size:1.1em;
 }
 
 
-h2 span {
-    text-align: center;
-}
-
-@media (max-width: 960px)
-{header nav {
-    display: inline;
-    position: fixed;
-    top: 0;
-    padding: 5px 0px;
-    font: #fff 7em;
-    border-radius:7px;
-    }
-}
 body {
     margin-bottom: 2em;
 }
+
 #Biosection div {
-    width: 80%;
     background: #26332D;
     opacity: .88;
     color:#dddfd4;
     padding: 5% 5%;
     border-radius:10px;
-    font-family: 'Roboto Condensed', sans-serif;
 }
 
-#Reviewssection div {
-    /*width: 80%;*/
-    font-family: 'Roboto Condensed', sans-serif;
-}
 #reviewblocks p {
     float:left;
     width: 45%;
     background: #26332D;
     opacity: .88;
     color:#dddfd4;
-    /*padding: 2.5% 2.5%;*/
+    padding: 2.5% 2.5%;
     border: 2.5%, 2.5:
     border-radius:5px;
 }
@@ -96,12 +81,9 @@ body {
  padding: 0% 2% 30% 2%;
  margin: 0% 0 20% 0;
 }
-/*photo section hover css*/
 
-#photosection{
-  width:80%;
-}
 
+/*photo section hover*/
 article{
   float:left;
   width:45%;
@@ -120,7 +102,7 @@ article{
     
 }
 .caption__overlay {
-    background: rgba(0,0,0,.4);
+    background: rgba(0,0,0,.35);
     position: absolute;
     top: 0;
     right: 0;
@@ -134,7 +116,6 @@ article{
 }
 .caption:hover .caption__overlay {
     transform: translateY(0%);
-
 }
  
     
@@ -219,4 +200,15 @@ a:hover: {
 
 #overlay ul {
     display: flex;
+}
+
+@media (max-width: 960px)
+{header nav {
+    display: inline;
+    position: fixed;
+    top: 0;
+    padding: 5px 0px;
+    font: #fff 7em;
+    border-radius:7px;
+    }
 }
