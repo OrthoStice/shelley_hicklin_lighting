@@ -50,6 +50,16 @@ body {
     margin-bottom: 2em;
 }
 
+h2 {
+    background: #26332D;
+    opacity: .88;
+    color:#dddfd4;
+    margin: 0 0 .6em 0;
+    padding: .2em 0;
+    text-align:center;
+    border-radius: 10px;
+}
+
 #Biosection div {
     background: #26332D;
     opacity: .88;
@@ -149,7 +159,6 @@ h1 {
 
 
 #Contactsection form{
-    padding: 0 0 0 20%;
     text-align:center;
 }
 
@@ -204,7 +213,7 @@ a:hover: {
     display: flex;
 }
 
-@media (max-width: 960px)
+@media (max-width: 650px)
     {header nav {
       position: fixed;
       top: 0;
@@ -214,12 +223,20 @@ a:hover: {
       height: 50px;
       background-color:rgba(98,98,98,0.8);
         }
-        
-    {header nav ul{
-        position: fixed;
-        top:0;
-        left:0;
-    }
-        
-    }
+
+}
+
+@media (max-width: 650px)
+    {header nav li {
+    display: inline;
+    background-color:rgba(98,98,98,0.8);
+        }
+
+}
+
+@media (max-width: 650px)
+    {article {
+         width: 100%;
+        }
+
 }
