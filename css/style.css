@@ -10,6 +10,16 @@ html {
   background-size: cover;
 }
 
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
 #Biosection,#Photossection,#Reviewssection,#Contactsection {
     margin: 0 6em 3em 3em;
     padding: 0 3em 0 0;
