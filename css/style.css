@@ -213,8 +213,8 @@ a:hover: {
     display: flex;
 }
 
-@media (max-width: 650px)
-    {header nav {
+@media (max-width: 660px) {
+    header nav {
       position: fixed;
       top: 0;
       left: 0;
@@ -223,20 +223,22 @@ a:hover: {
       height: 50px;
       background-color:rgba(98,98,98,0.8);
         }
-
-}
-
-@media (max-width: 650px)
-    {header nav li {
+    
+    header nav li {
     display: inline;
     background-color:rgba(98,98,98,0.8);
         }
 
-}
-
-@media (max-width: 650px)
-    {article {
+    article {
          width: 100%;
         }
 
+    #Biosection,#Photossection,#Reviewssection,#Contactsection {
+    margin: 0;
+    padding: 2em;
+    }
+    
+    #Title {
+        padding: 8em;
+    }
 }
