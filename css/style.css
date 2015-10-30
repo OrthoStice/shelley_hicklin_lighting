@@ -23,6 +23,7 @@ html {
 #Biosection,#Photossection,#Reviewssection,#Contactsection {
     margin: 0 6em 3em 3em;
     padding: 0 3em 0 0;
+    width:80%;
 }
 
 #wrapper {
@@ -38,13 +39,13 @@ html {
 
 #nav li {
     list-style: none;
-    margin: 5% 7% 5% 9%;
+    margin: .6em;
     background: #26332D;
     opacity: .88;
     color:#dddfd4;
     font-size:1.2em;
     text-decoration:none;
-    padding: .3em .1em .3em 3em;
+    padding: .34em .4em .34em 2.5em;
     border-radius:7px;
     text-align:right;
 }
@@ -176,8 +177,8 @@ h1 {
     clear:both;
     display: inline-block;
 }
-
 #Contactsection form{
+    width:100%;
     text-align:center;
 }
 
@@ -186,24 +187,16 @@ footer div {
     height:50px;
 }
 
-
-/* unvisited link */
 a:link {
     color: #dddfd4;
 }
-
-/* visited link */
 a:visited:not(.active) {
     color: #dddfd4;
 }
-
-/* mouse over link */
 #nav a:hover: {
     font-size: 1.05em;
     color: #efffe5;
 }
-
-
 
 /*Lightbox stylie*/
 #overlay {
@@ -217,16 +210,13 @@ a:visited:not(.active) {
   text-align:center;
   overflow-y: scroll;
 }
-
 #overlay img {
  margin: 1em;
+ max-width:80%;
 }
-
-
 #overlay p {
  color:white; 
 }
-
 #overlay ul{
     list-style:none;
 }
@@ -241,7 +231,6 @@ a:visited:not(.active) {
         background: #26332D;
         text-align:center;
     }
-    
     #nav li {
         display:inline-block;
         background: #26332D;
@@ -254,28 +243,26 @@ a:visited:not(.active) {
         margin:0;
         width:100%;
     }
-
-
-#nav .active li{
-    border-radius: 5px;
-}
+    #nav .active li{
+        border-radius: 5px;
+    }
     article {
-         width: 100%;
-        }
+        width: 100%;
+    }
 
-    #Biosection,#Photossection,#Reviewssection,#Contactsection {
-    margin: 0;
-    padding: 2em;
+#Biosection,#Photossection,#Reviewssection,#Contactsection{
+        padding: 2em;
+        width:95%;
     }
     
     #Titlediv {
-     margin:1.2em 0 4em 0;
-     text-align:center;
+         margin:1.2em 0 4em 0;
+         text-align:center;
     }
 }
 
 @media only screen and (max-width: 501px) {
-        #nav {
+    #nav {
         position: fixed;
         z-index: 500;
         width: 100%;
@@ -283,7 +270,6 @@ a:visited:not(.active) {
         background: #26332D;
         text-align:center;
     }
-    
     #nav li {
         display:inline-block;
         background: #26332D;
@@ -296,11 +282,14 @@ a:visited:not(.active) {
         margin:0;
         width:100%;
     }
-
-
-#nav .active li{
-    border-radius: 5px;
-}
+    #nav .active li{
+        border-radius: 5px;
+    }
     
 }
 
+@media only screen and (max-width: 845px) {
+    #Biosection,#Photossection,#Reviewssection,#Contactsection {
+        width:73%;
+    }
+}
