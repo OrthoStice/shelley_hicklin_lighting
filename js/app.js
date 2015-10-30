@@ -59,30 +59,30 @@ http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visibl
 
 
 
-window.addEventListener("DOMContentLoaded", isSectionActive);
-window.addEventListener("load", isSectionActive);
-window.addEventListener("resize", isSectionActive);
-window.addEventListener("scroll", isSectionActive);
+// window.addEventListener("DOMContentLoaded", isSectionActive);
+// window.addEventListener("load", isSectionActive);
+// window.addEventListener("resize", isSectionActive);
+// window.addEventListener("scroll", isSectionActive);
 
-function isSectionActive() {
-  var section = document.querySelectorAll("section.anchor");
-  [].forEach.call(section, function (item) {
-    function isElementInViewport() {
+// function isSectionActive() {
+//   var section = document.querySelectorAll("section.anchor");
+//   [].forEach.call(section, function (item) {
+//     function isElementInViewport(section) {
 
-    var rect = section.getBoundingClientRect;
+//     var rect = section.getBoundingClientRect();
 
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
-    );
-}
-    if (isElementInViewport(section)) {
-      section.classList.add ("active");
-    }// else {
-     // section.classList.remove("active");
-   // }
-  })
-  console.log(section)
-}
+//     return (
+//         rect.top >= 0 &&
+//         rect.left >= 0 &&
+//         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+//         rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+//     );
+// }
+//     if (isElementInViewport(section)) {
+//       section.classList.add ("active");
+//     }// else {
+//     // section.classList.remove("active");
+//   // }
+//   })
+//   console.log(section)
+// }
