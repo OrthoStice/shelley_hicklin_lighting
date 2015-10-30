@@ -12,7 +12,6 @@ $("body").append($overlay);
 $("#imageGallery a").click(function(event){
   event.preventDefault();
   var imageLocation = $(this).attr("href").slice(-17);
-  console.log(imageLocation);
 	var apiKey = '7b67c7183d7b429d9225c15c48efb9a8';
 	var userID = '51428176@N08';
   var flickerAPI= 'https://api.flickr.com/services/rest/?format=json&method=flickr.photosets.getPhotos&api_key=' + apiKey + '&photoset_id=' + imageLocation + '&user_id=' + userID + '&jsoncallback=?';
