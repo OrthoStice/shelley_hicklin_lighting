@@ -34,16 +34,20 @@ html {
     position: fixed;
     top: 0;
     right: 0;
-    text-decoration: none;    
-    list-style: none;
-    text-align: center;
+    text-align: right;
 }
 
 #nav li {
     list-style: none;
     margin: 5% 7% 5% 5%;
     background: #26332D;
+    opacity: .88;
+    color:#dddfd4;
     font-size:1.2em;
+    text-decoration:none;
+    padding: .2em;
+    border-radius:7px;
+
 }
 
 #nav .active{
@@ -51,7 +55,7 @@ html {
     background: #dddfd4;
 }
 
-#nav a .active {
+#nav a .active li{
     color: #26332d;
     background: #dddfd4;
 }
@@ -206,11 +210,10 @@ a:hover: {
   left:0;
   display:none;
   text-align:center;
-  overflow-x: scroll;
+  overflow-y: scroll;
 }
 
 #overlay img {
- max-width:45%;
  margin: 1em;
 }
 
@@ -219,9 +222,10 @@ a:hover: {
  color:white; 
 }
 
-#overlay ul {
-    display: flex;
+#overlay ul{
+    list-style:none;
 }
+
 
 @media only screen and (max-width: 680px) {
     header nav {

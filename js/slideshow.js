@@ -16,12 +16,11 @@ $("#imageGallery a").click(function(event){
 	var userID = '51428176@N08';
   var flickerAPI= 'https://api.flickr.com/services/rest/?format=json&method=flickr.photosets.getPhotos&api_key=' + apiKey + '&photoset_id=' + imageLocation + '&user_id=' + userID + '&jsoncallback=?';
   var flickerOptions= "photoset";
-
   function displayPhotos(data) {
       var photoHTML = '<ul class="removeable">';
       $.each(data.photoset.photo,function(i,item) {
-        photoHTML += '<li class="flexbox item">';
-        photoHTML += '<img src="https://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '.jpg>';
+        photoHTML += '<li class="flexboxitem">';
+        photoHTML += '<img src="https://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '.jpg" alt="' + item.title + '"/>';
         photoHTML += '</li>';
         }); // end each loop
         photoHTML += '</ul>';
