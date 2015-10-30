@@ -34,19 +34,19 @@ html {
     position: fixed;
     top: 0;
     right: 0;
-    text-align: right;
 }
 
 #nav li {
     list-style: none;
-    margin: 5% 7% 5% 5%;
+    margin: 5% 7% 5% 9%;
     background: #26332D;
     opacity: .88;
     color:#dddfd4;
     font-size:1.2em;
     text-decoration:none;
-    padding: .2em;
+    padding: .3em .1em .3em 3em;
     border-radius:7px;
+    text-align:right;
 }
 
 #nav a{
@@ -239,16 +239,14 @@ a:visited:not(.active) {
         width: 100%;
         height: auto;
         background: #26332D;
-        opacity: .88;      
         text-align:center;
     }
     
     #nav li {
         display:inline-block;
         background: #26332D;
-        opacity: .88;
         margin:.1em 0;
-        padding:.48em 2em;
+        padding:.48em 2.5em;
         font-size: 1em;
     }
     #nav ul {
@@ -283,16 +281,14 @@ a:visited:not(.active) {
         width: 100%;
         height: auto;
         background: #26332D;
-        opacity: .88;      
         text-align:center;
     }
     
     #nav li {
         display:inline-block;
         background: #26332D;
-        opacity: .88;
         margin:.1em 0;
-        padding:.38em .8em;
+        padding:.4em 1.1em;
         font-size: 1em;
     }
     #nav ul {
