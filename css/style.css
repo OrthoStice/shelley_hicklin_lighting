@@ -63,12 +63,22 @@ body {
     margin-bottom: 2em;
 }
 
-h2 {
+h2,h3 {
     background: #26332D;
     opacity: .88;
     color:#dddfd4;
     margin: 0 0 .6em 0;
     padding: .2em 0;
+    text-align:center;
+    border-radius: 10px;
+}
+
+aside {
+    background: #26332D;
+    opacity: .88;
+    color:#dddfd4;
+    margin: 0 0 .6em 0;
+    padding: 0;
     text-align:center;
     border-radius: 10px;
 }
@@ -87,8 +97,8 @@ h2 {
     background: #26332D;
     opacity: .88;
     color:#dddfd4;
-    padding: 2.5% 2.5%;
-    border-width: 2px;
+    padding: 02.5% 2.5%;
+    margin:2%;
     border-radius: 7px;
 }
 
@@ -295,9 +305,6 @@ a:visited:not(.active) {
 #nav .active li{
     border-radius: 5px;
 }
-    
-    
-    
     
 }
 
