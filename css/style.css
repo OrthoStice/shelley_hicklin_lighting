@@ -119,6 +119,10 @@ aside {
  padding: 0% 2% 30% 2%;
  margin: 0% 0 20% 0;
 }
+#Photossection article {
+    box-shadow:0 0 3px 7px #333333;
+    background:#26332D;
+}
 
 
 /*photo section hover*/
@@ -213,6 +217,8 @@ a:visited:not(.active) {
 #overlay img {
  margin: 1em;
  max-width:80%;
+     box-shadow:0 0 4px 6px #333333;
+    background: #333333;
 }
 #overlay p {
  color:white; 
@@ -261,10 +267,7 @@ a:visited:not(.active) {
     }
 }
 
-#Photossection article {
-    box-shadow:0 0 3px 5px #26332D;
-    background:#26332D;
-}
+
 
 @media only screen and (max-width: 501px) {
     #nav {
