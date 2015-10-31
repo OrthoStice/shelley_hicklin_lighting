@@ -93,14 +93,23 @@ aside {
 }
 
 #reviewblocks p {
-    float:left;
+    display:inline-block;
     width: 45%;
     background: #26332D;
     opacity: .88;
     color:#dddfd4;
-    padding: 02.5% 2.5%;
-    margin:2%;
+    padding: 2.5%;
+    margin: 2%;
     border-radius: 7px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align:top;
+}
+
+#reviewblocks a {
+    font-style:italic;
+    color:#ddddc3;
 }
 
 #bioimg {
@@ -182,10 +191,23 @@ h1 {
     display: inline-block;
 }
 #Contactsection form{
-    width:100%;
+    width:45%;
     text-align:center;
 }
 
+#linkedin {
+    width:45%;
+    display:inline-block;
+    vertical-align:top;
+    float: right;
+    color:#333333;
+}
+
+#linkedin p{
+    display:inline-block;
+    padding: 0 0 1em 1em;
+    vertical-align:top;
+}
 footer div {
     width:100%;
     height:50px;
@@ -256,15 +278,33 @@ a:visited:not(.active) {
         width: 100%;
     }
 
-#Biosection,#Photossection,#Reviewssection,#Contactsection{git
-        padding: 2em;
+#Biosection,#Photossection,#Reviewssection,#Contactsection{
         width:95%;
+    }
+    #linkedin{
+        display:block;
+        width:100%;
+        margin: 2em;
+        
     }
     
     #Titlediv {
          margin:1.2em 0 4em 0;
          text-align:center;
     }
+    #reviewblocks p {
+    display:inline-block;
+    width: 95%;
+    padding: 2.5%;
+    margin: 2%;
+    border-radius: 7px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align:top;
+    text-align:center;
+}
+
 }
 
 
