@@ -128,6 +128,7 @@ aside {
  padding: 0% 2% 30% 2%;
  margin: 0% 0 20% 0;
 }
+
 #Photossection article {
     box-shadow:0 0 3px 7px #333333;
     background:#26332D;
@@ -219,9 +220,12 @@ a:link {
 a:visited:not(.active) {
     color: #dddfd4;
 }
-#nav a:hover: {
-    font-size: 1.05em;
-    color: #efffe5;
+#nav li:hover {
+    color: #ffffe5;
+}
+
+#reviewblocks a:hover {
+    color: #ffffe5;
 }
 
 /*Lightbox stylie*/
@@ -278,9 +282,8 @@ a:visited:not(.active) {
         width: 100%;
     }
 
-#Biosection,#Photossection,#Reviewssection,#Contactsection{
-        width:95%;
-    }
+
+    
     #linkedin{
         display:block;
         width:100%;
@@ -293,17 +296,17 @@ a:visited:not(.active) {
          text-align:center;
     }
     #reviewblocks p {
-    display:inline-block;
-    width: 95%;
-    padding: 2.5%;
-    margin: 2%;
-    border-radius: 7px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    vertical-align:top;
-    text-align:center;
-}
+        display:inline-block;
+        width: 95%;
+        padding: 2.5%;
+        margin: 2%;
+        border-radius: 7px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        vertical-align:top;
+        text-align:center;
+    }
 
 }
 
@@ -333,10 +336,26 @@ a:visited:not(.active) {
     #nav .active li{
         border-radius: 5px;
     }
-    
+    #Titlediv {
+         font-size: .8em;
+         text-align:center;
+         width:100%;
+         margin: 1.7em 0 15em 0;
+    }
+    #Biosection,#Photossection,#Reviewssection,#Contactsection{
+        width:100%;
+        box-sizing: border-box;
+        margin: 0 0 3em 0;
+        padding:0;
+        text-align:center;
+    }
+    #bioimg {
+        width:35%;
+    }
+
 }
 
-@media only screen and (max-width: 845px) {
+@media only screen and (max-width: 845px) and (min-width: 680px) {
     #Biosection,#Photossection,#Reviewssection,#Contactsection {
         width:73%;
     }
