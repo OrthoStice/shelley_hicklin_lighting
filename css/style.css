@@ -6,16 +6,16 @@
     width: extend-to-zoom;
     zoom: 1.0;
 }
-#Biosection,#Photossection,#Reviewssection,#Contactsection {
-    margin: 0 6em 3em 3em;
-    padding: 0 3em 0 0;
-    width:80%;
-}
 #wrapper {
      margin: 0 auto;
      font-family: 'Roboto Condensed', sans-serif;
 }
-#nav {    
+#Biosection,#Photossection,#Reviewssection,#Contactsection{
+    margin: 0 6em 3em 3em;
+    padding: 0 3em 0 0;
+    width:80%;
+}
+#nav{    
     position: fixed;
     top: 0;
     right: 0;
@@ -140,7 +140,7 @@ footer div {
     width:100%;
     height:50px;
 }
-/*******pseuto classes**********/
+/*******pseudo classes**********/
 a:link {
     color: #dddfd4;
 }
@@ -214,30 +214,24 @@ article{
 }
 /************Media queries**************/
 @media only screen and (max-width: 680px) {
-    #nav {
-        position: fixed;
-        z-index: 500;
-        width: 100%;
-        height: auto;
-        background: #26332D;
-        text-align:center;
-    }
-    #nav a h3 {
-        display:inline-block;
-        background: #26332D;
-        margin:.1em 0;
-        padding:.48em 2.5em;
-        font-size: 1em;
-    }
-    #nav ul {
-        padding:0;
-        margin:0;
-        width:100%;
-    }
-    #nav .active a h3{
-        border-radius: 5px;
-    }
-    article {
+    /*#nav{*/
+    /*    position: fixed;*/
+    /*    z-index: 500;*/
+    /*    width: 100%;*/
+    /*    height: auto;*/
+    /*    background: #26332D;*/
+    /*}*/
+    /*#nav a h3{*/
+    /*    display:inline-block;*/
+    /*    background: #26332D;*/
+    /*    margin:.1em 0;*/
+    /*    padding:.48em 2.5em;*/
+    /*    font-size: 1em;*/
+    /*}*/
+    /*#nav .active a h3{*/
+    /*    border-radius: 5px;*/
+    /*}*/
+    article{
         width: 100%;
         margin: .4em 0;
     }
@@ -246,7 +240,7 @@ article{
         width:100%;
         margin: 2em;
     }
-    #Titlediv {
+    #Titlediv{
          margin:1.2em 0 4em 0;
          text-align:center;
     }
@@ -267,23 +261,30 @@ article{
     #nav {
         position: fixed;
         z-index: 500;
-        width: 100%;
-        height: auto;
         background: #26332D;
         text-align:center;
-    }
-    #nav a h3 {
-        display:inline-block;
-        background: #26332D;
-        margin:.1em 0;
-        padding:.4em 1.1em;
-        font-size: 1em;
-    }
-    #nav ul {
-        padding:0;
-        margin:0;
+        height:3em;
         width:100%;
     }
+    #nav a h3{
+        margin:0;
+        padding:0 1em;
+        font-style:normal;
+        font-size: 1em;
+        text-align:center;
+    }
+    #nav li{
+        display:inline-block;
+        list-style:none;
+        background: #26332D;
+        margin: 0;
+        padding:0;
+    }
+    
+    #nav ul{
+        padding:0;
+    }
+
     #nav .active a h3{
         border-radius: 5px;
     }
