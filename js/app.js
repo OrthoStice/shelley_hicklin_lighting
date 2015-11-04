@@ -25,7 +25,9 @@ $("header h1,nav").hide().fadeIn(4000);
 $("#Bio").hide().fadeIn(5000);
 
 
-
+$('#thematrix').click(function() {
+          $('#wrapper').toggleClass('altwrapper');
+});
 
 
 
