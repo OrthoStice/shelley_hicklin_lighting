@@ -263,13 +263,13 @@ article{
         z-index: 500;
         background: #26332D;
         text-align:center;
-        height:3em;
+        height:auto;
         width:100%;
     }
     #nav a h3{
         margin:0;
-        padding:0 1em;
-        font-style:normal;
+        padding:.5em 1em;
+        font-weight:normal;
         font-size: 1em;
         text-align:center;
     }
@@ -278,13 +278,12 @@ article{
         list-style:none;
         background: #26332D;
         margin: 0;
-        padding:0;
+        padding: 0;
     }
-    
     #nav ul{
         padding:0;
+        margin:.16em 0;
     }
-
     #nav .active a h3{
         border-radius: 5px;
     }
