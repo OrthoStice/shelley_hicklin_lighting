@@ -1,23 +1,44 @@
-$(window).scroll(function() {
-    var windscroll = $(window).scrollTop();
-    if (windscroll >= 100) {
-        $('nav').addClass('fixed');
-        $('span').each(function(i) {
-            if ($(this).position().top <= windscroll - 100) {
-                $('nav a.active').removeClass('active');
-                $('nav a').eq(i).addClass('active');
-            }
-        });
+// $(window).scroll(function() {
+//     var windscroll = $(window).scrollTop();
+//     if (windscroll >= 100) {
+//         $('nav').addClass('fixed');
+//         $('span').each(function(i) {
+//             if ($(this).position().top <= windscroll - 100) {
+//                 $('nav a.active').removeClass('active');
+//                 $('nav a').eq(i).addClass('active');
+//             }
+//         });
 
-    } else {
+//     } else {
 
-        $('nav').removeClass('fixed');
-        $('nav a.active').removeClass('active');
-        $('nav a:first').addClass('active');
-    }
+//         $('nav').removeClass('fixed');
+//         $('nav a.active').removeClass('active');
+//         $('nav a:first').addClass('active');
+//     }
 
-}).scroll()
+// }).scroll()
+$(document).ready(function(){
 
+	var sections = $('section')
+	  , nav = $('nav');
+	 
+	$(window).on('scroll', function () {
+	  var cur_pos = $(this).scrollTop();
+	 
+	  sections.each(function() {
+	    var top = $(this).offset().top -32,
+	        bottom = top + $(this).outerHeight();
+	 
+	    if (cur_pos >= top && cur_pos <= bottom) {
+	      nav.find('a').removeClass('active');
+	      sections.removeClass('active');
+	 
+	      $(this).addClass('active');
+	      nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+	    }
+	  });
+	});
+});
 
 
 //opening fade effect
