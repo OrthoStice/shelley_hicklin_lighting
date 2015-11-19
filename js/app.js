@@ -1,3 +1,4 @@
+
 // $(window).scroll(function() {
 //     var windscroll = $(window).scrollTop();
 //     if (windscroll >= 100) {
@@ -17,6 +18,20 @@
 //     }
 
 // }).scroll()
+function isScrolledIntoView(elem)
+{
+    var $elem = $(elem);
+    var $window = $(window);
+
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
 $(document).ready(function(){
 
 	var sections = $('section')
@@ -32,7 +47,8 @@ $(document).ready(function(){
 	    if (cur_pos >= top && cur_pos <= bottom) {
 	      nav.find('a').removeClass('active');
 	      sections.removeClass('active');
-	 
+	      nav.find('a').removeClass('active');
+	      sections.removeClass('active');
 	      $(this).addClass('active');
 	      nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
 	    }
