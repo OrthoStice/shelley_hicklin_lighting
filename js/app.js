@@ -38,11 +38,11 @@ $(document).ready(function(){
 });
 
 
-//opening fade effect
+//opening fade-in effect
 $("header h1,nav").hide().fadeIn(4000);
 $("#Bio").hide().fadeIn(5000);
 
-
+//matrix easter egg
 $('#thematrix').click(function() {
           $('#wrapper').toggleClass('altwrapper');
 });
@@ -50,7 +50,7 @@ $('#thematrix').click(function() {
 
 
 
-//easter egg
+//console easter egg
 var Util = {
   is_webkit: function() {
     return navigator.userAgent.indexOf("AppleWebKit") > -1;
